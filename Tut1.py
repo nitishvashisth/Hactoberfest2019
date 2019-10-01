@@ -254,6 +254,17 @@ printinfo(10,20,30,40)
 
 sum = lambda ar,br: ar+br;
 
-print("The total is ",sum(10,20))		
+print("The total is ",sum(10,20))	
+
+# To read command line agruments
+if __name__ == '__main__':
+
+	parser = argparse.ArgumentParser(description="run json file path")
+    parser.add_argument("-p", dest="regression_run_json_path",
+                        required=True, type=str, help="input path for run json file path")
+
+    args = parser.parse_args()
+
+    runJson_filepath = args.regression_run_json_path
 
 
