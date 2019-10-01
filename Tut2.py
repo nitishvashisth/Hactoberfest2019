@@ -69,3 +69,12 @@ print(k)
 # string formatting
 txt = "The price is {:.2f} dollars"
 txt = "The price is {:.2f} dollars"
+
+# create mongo collections
+
+import pymongo
+
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+mydb = myclient["mydatabase"]
+
+mycol = mydb["customers"]
