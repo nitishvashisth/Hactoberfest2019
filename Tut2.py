@@ -65,3 +65,7 @@ print(k)
 	Generate random number in python  
 
 		random.randint(50,100)
+
+# string formatting
+txt = "The price is {:.2f} dollars"
+txt = "The price is {:.2f} dollars"
