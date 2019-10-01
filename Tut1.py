@@ -267,4 +267,10 @@ if __name__ == '__main__':
 
     runJson_filepath = args.regression_run_json_path
 
+# python file handling
+
+f = open("demofile.txt", "r")
+for x in f:
+  print(x)
+
 
